@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		628FF53C29D57AEC002919F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF53B29D57AEC002919F5 /* GameViewController.swift */; };
-		628FF54029D57EAB002919F5 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF53F29D57EAB002919F5 /* WordList.swift */; };
 		628FF54229D57EE8002919F5 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF54129D57EE8002919F5 /* Word.swift */; };
+		628FF54429D58238002919F5 /* WordCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF54329D58238002919F5 /* WordCollection.swift */; };
+		628FF54829D58CCE002919F5 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF54729D58CCE002919F5 /* CountdownTimer.swift */; };
 		62FBB74D29D20C5600852B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBB74C29D20C5600852B38 /* AppDelegate.swift */; };
 		62FBB74F29D20C5600852B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBB74E29D20C5600852B38 /* SceneDelegate.swift */; };
 		62FBB75129D20C5600852B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FBB75029D20C5600852B38 /* ViewController.swift */; };
@@ -40,8 +41,9 @@
 
 /* Begin PBXFileReference section */
 		628FF53B29D57AEC002919F5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		628FF53F29D57EAB002919F5 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		628FF54129D57EE8002919F5 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		628FF54329D58238002919F5 /* WordCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollection.swift; sourceTree = "<group>"; };
+		628FF54729D58CCE002919F5 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		62FBB74929D20C5600852B38 /* SpeedyWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedyWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62FBB74C29D20C5600852B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62FBB74E29D20C5600852B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,8 +96,9 @@
 		628FF53E29D57E71002919F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				628FF53F29D57EAB002919F5 /* WordList.swift */,
 				628FF54129D57EE8002919F5 /* Word.swift */,
+				628FF54329D58238002919F5 /* WordCollection.swift */,
+				628FF54729D58CCE002919F5 /* CountdownTimer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,10 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				628FF53C29D57AEC002919F5 /* GameViewController.swift in Sources */,
+				628FF54429D58238002919F5 /* WordCollection.swift in Sources */,
 				62FBB75129D20C5600852B38 /* ViewController.swift in Sources */,
+				628FF54829D58CCE002919F5 /* CountdownTimer.swift in Sources */,
 				62FBB74D29D20C5600852B38 /* AppDelegate.swift in Sources */,
 				62FBB74F29D20C5600852B38 /* SceneDelegate.swift in Sources */,
-				628FF54029D57EAB002919F5 /* WordList.swift in Sources */,
 				628FF54229D57EE8002919F5 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
