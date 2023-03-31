@@ -40,7 +40,7 @@ class CountdownTimer {
     }
     
     func reset() {
-        self.remainingTime = self.initTime
+        self.remainingTime = self.initTime + 1
     }
     
     deinit {

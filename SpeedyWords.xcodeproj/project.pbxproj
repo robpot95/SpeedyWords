@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625A12A729D6BA0300F26A81 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625A12A629D6BA0300F26A81 /* GameOverViewController.swift */; };
 		628FF53C29D57AEC002919F5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF53B29D57AEC002919F5 /* GameViewController.swift */; };
 		628FF54229D57EE8002919F5 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF54129D57EE8002919F5 /* Word.swift */; };
 		628FF54429D58238002919F5 /* WordCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628FF54329D58238002919F5 /* WordCollection.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		625A12A629D6BA0300F26A81 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		628FF53B29D57AEC002919F5 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		628FF54129D57EE8002919F5 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		628FF54329D58238002919F5 /* WordCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCollection.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				62FBB75029D20C5600852B38 /* ViewController.swift */,
 				628FF53B29D57AEC002919F5 /* GameViewController.swift */,
+				625A12A629D6BA0300F26A81 /* GameOverViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				628FF54429D58238002919F5 /* WordCollection.swift in Sources */,
 				62FBB75129D20C5600852B38 /* ViewController.swift in Sources */,
 				628FF54829D58CCE002919F5 /* CountdownTimer.swift in Sources */,
+				625A12A729D6BA0300F26A81 /* GameOverViewController.swift in Sources */,
 				62FBB74D29D20C5600852B38 /* AppDelegate.swift in Sources */,
 				62FBB74F29D20C5600852B38 /* SceneDelegate.swift in Sources */,
 				628FF54229D57EE8002919F5 /* Word.swift in Sources */,

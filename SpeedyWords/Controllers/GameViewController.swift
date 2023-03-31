@@ -33,7 +33,15 @@ class GameViewController: UIViewController {
                 self.timerLabel.text = "Time left: \(Int(remainingTime))"
             }
         }, completionHandler: {
-            print("Countdown complete!")
+            DispatchQueue.main.async {
+                let alert = UIAlertController(title: "GameOver", message: "Tiden är över! Din totala poäng är: \(self.score)", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                    let next = self.storyboard?.instantiateViewController(withIdentifier: "GameOverViewController") as! GameOverViewController
+                    next.score = self.score
+                    self.present(next, animated: true, completion: nil)
+                }))
+                self.present(alert, animated: true)
+            }
         })
         
         countdown?.start()
@@ -41,16 +49,26 @@ class GameViewController: UIViewController {
     
     func nextWord() {
         index += 1
-        wordLabel.text = collection.getCurrentWord(at: index)
-        inputField.text = ""
-        countdown?.reset()
+        if index > collection.count - 1 {
+            let alert = UIAlertController(title: "Du vann", message: "Grattis! Din totala poäng är: \(self.score)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                let next = self.storyboard?.instantiateViewController(withIdentifier: "GameOverViewController") as! GameOverViewController
+                next.score = self.score
+                self.present(next, animated: true, completion: nil)
+            }))
+            self.present(alert, animated: true)
+        } else {
+            wordLabel.text = collection.getCurrentWord(at: index)
+            inputField.text = ""
+            countdown?.reset()
+        }
     }
     
     @IBAction func textFieldOnChanged(_ sender: Any) {
-        if inputField.text == collection.getCurrentWord(at: index) {
-            nextWord()
+        if inputField.text?.lowercased() == collection.getCurrentWord(at: index) {
             score += 1
             scoreLabel.text = "Score: \(score)"
+            nextWord()
         }
     }
     
